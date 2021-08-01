@@ -7,5 +7,4 @@ if [ "$#" -gt 0 ]; then
   docker build . -t $IMAGE_TAG
 else
   echo "ERROR: You must specify an argument to be passed to the shell script (Image Tag)"
-  exit 1
 fi
