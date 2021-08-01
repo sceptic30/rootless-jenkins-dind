@@ -6,6 +6,6 @@ if [ "$#" -gt 0 ]; then
   sed -i "s/gid=117/gid=$DOCKER_HOST_GIU/g" Dockerfile
   docker build . -t $IMAGE_TAG
 else
-  echo "ERROR: You must specify an arguement to be passed to the shell script (Image Tag)"
+  echo "ERROR: You must specify an argument to be passed to the shell script (Image Tag)"
   exit 1
 fi
